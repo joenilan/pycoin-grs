@@ -4,7 +4,7 @@ Tools
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.tools.__init__
+.. automodule:: pycoin_grs.tools.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ Tools
 :mod:`bitcoind_disk` Module
 ----------------------------------
 
-.. automodule:: pycoin.tools.bitcoind_disk
+.. automodule:: pycoin_grs.tools.bitcoind_disk
     :members:
     :undoc-members:
     :show-inheritance:

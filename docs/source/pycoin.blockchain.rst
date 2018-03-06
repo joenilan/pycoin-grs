@@ -4,7 +4,7 @@ Blockchain
 :mod:`BlockChain` Module
 ----------------------------------
 
-.. automodule:: pycoin.blockchain.BlockChain
+.. automodule:: pycoin_grs.blockchain.BlockChain
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ Blockchain
 :mod:`ChainFinder` Module
 ----------------------------------
 
-.. automodule:: pycoin.blockchain.ChainFinder
+.. automodule:: pycoin_grs.blockchain.ChainFinder
     :members:
     :undoc-members:
     :show-inheritance:

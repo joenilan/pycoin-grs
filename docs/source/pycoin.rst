@@ -1,10 +1,10 @@
-pycoin Package
+pycoin_grs Package
 ==============
 
-:mod:`pycoin` Package
+:mod:`pycoin_grs` Package
 ---------------------
 
-.. automodule:: pycoin.__init__
+.. automodule:: pycoin_grs.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -12,7 +12,7 @@ pycoin Package
 :mod:`block` Module
 -------------------
 
-.. automodule:: pycoin.block
+.. automodule:: pycoin_grs.block
     :members:
     :undoc-members:
     :show-inheritance:
@@ -20,7 +20,7 @@ pycoin Package
 :mod:`bloomfilter` Module
 -------------------------
 
-.. automodule:: pycoin.bloomfilter
+.. automodule:: pycoin_grs.bloomfilter
     :members:
     :undoc-members:
     :show-inheritance:
@@ -28,7 +28,7 @@ pycoin Package
 :mod:`encoding` Module
 ----------------------
 
-.. automodule:: pycoin.encoding
+.. automodule:: pycoin_grs.encoding
     :members:
     :undoc-members:
     :show-inheritance:
@@ -36,7 +36,7 @@ pycoin Package
 :mod:`intbytes` Module
 ----------------------
 
-.. automodule:: pycoin.intbytes
+.. automodule:: pycoin_grs.intbytes
     :members:
     :undoc-members:
     :show-inheritance:
@@ -44,7 +44,7 @@ pycoin Package
 :mod:`merkle` Module
 --------------------
 
-.. automodule:: pycoin.merkle
+.. automodule:: pycoin_grs.merkle
     :members:
     :undoc-members:
     :show-inheritance:
@@ -52,7 +52,7 @@ pycoin Package
 :mod:`ui` Module
 ----------------
 
-.. automodule:: pycoin.ui
+.. automodule:: pycoin_grs.ui
     :members:
     :undoc-members:
     :show-inheritance:
@@ -60,7 +60,7 @@ pycoin Package
 :mod:`version` Module
 ---------------------
 
-.. automodule:: pycoin.version
+.. automodule:: pycoin_grs.version
     :members:
     :undoc-members:
     :show-inheritance:
@@ -70,19 +70,19 @@ Subpackages
 
 .. toctree::
 
-    pycoin.blockchain
-    pycoin.cmds
-    pycoin.contrib
-    pycoin.convention
-    pycoin.ecdsa
-    pycoin.key
-    pycoin.message
-    pycoin.networks
-    pycoin.serialize
-    pycoin.networks
-    pycoin.serialize
-    pycoin.services
-    pycoin.tools
-    pycoin.tx
-    pycoin.wallet
+    pycoin_grs.blockchain
+    pycoin_grs.cmds
+    pycoin_grs.contrib
+    pycoin_grs.convention
+    pycoin_grs.ecdsa
+    pycoin_grs.key
+    pycoin_grs.message
+    pycoin_grs.networks
+    pycoin_grs.serialize
+    pycoin_grs.networks
+    pycoin_grs.serialize
+    pycoin_grs.services
+    pycoin_grs.tools
+    pycoin_grs.tx
+    pycoin_grs.wallet
 

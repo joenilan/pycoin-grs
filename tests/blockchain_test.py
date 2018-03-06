@@ -1,5 +1,5 @@
 
-from pycoin.blockchain.BlockChain import BlockChain
+from pycoin_grs.blockchain.BlockChain import BlockChain
 
 
 class FakeBlock(object):

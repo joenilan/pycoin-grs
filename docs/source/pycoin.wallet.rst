@@ -3,7 +3,7 @@ Wallet
 
 a wallet is a DB of Spendable objects, and a way to query and manage them
 
-The wallet accepts pycoinnet bitcoin events (_blockchain_update and _mempool_tx)
+The wallet accepts pycoin_grsnet bitcoin events (_blockchain_update and _mempool_tx)
 and decides for itself which Spendable objects its interested in.
 
 Ideally, it should keep an archive of all Spendable objects its ever received so it can
@@ -16,7 +16,7 @@ morphed versions (modulo malleability)
 :mod:`SQLite3Persistence` Module
 ----------------------------------
 
-.. automodule:: pycoin.wallet.SQLite3Persistence
+.. automodule:: pycoin_grs.wallet.SQLite3Persistence
     :members:
     :undoc-members:
     :show-inheritance:
@@ -25,7 +25,7 @@ morphed versions (modulo malleability)
 :mod:`SQLite3Wallet` Module
 ----------------------------------
 
-.. automodule:: pycoin.wallet.SQLite3Wallet
+.. automodule:: pycoin_grs.wallet.SQLite3Wallet
     :members:
     :undoc-members:
     :show-inheritance:

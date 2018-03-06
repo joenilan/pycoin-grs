@@ -45,8 +45,8 @@ def make_f(cmd, expected_output, comments, path):
     def f(self):
         CACHE_DIR = tempfile.mkdtemp()
         old_environ = dict(os.environ)
-        new_environ = dict(PYCOIN_CACHE_DIR=CACHE_DIR)
-        for k in "PATH PYCOIN_BTC_PROVIDERS".split():
+        new_environ = dict(PYCOIN_GRS_CACHE_DIR=CACHE_DIR)
+        for k in "PATH PYCOIN_GRS_BTC_PROVIDERS".split():
             new_environ[k] = os.environ.get(k, "")
         os.environ = new_environ
         os.chdir(CACHE_DIR)

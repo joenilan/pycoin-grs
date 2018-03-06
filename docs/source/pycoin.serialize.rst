@@ -5,7 +5,7 @@ Serialize
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.serialize.__init__
+.. automodule:: pycoin_grs.serialize.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -14,7 +14,7 @@ Serialize
 :mod:`bitcoin_streamer` Module
 ----------------------------------
 
-.. automodule:: pycoin.serialize.bitcoin_streamer
+.. automodule:: pycoin_grs.serialize.bitcoin_streamer
     :members:
     :undoc-members:
     :show-inheritance:
@@ -23,7 +23,7 @@ Serialize
 :mod:`streamer` Module
 ----------------------------------
 
-.. automodule:: pycoin.serialize.streamer
+.. automodule:: pycoin_grs.serialize.streamer
     :members:
     :undoc-members:
     :show-inheritance:

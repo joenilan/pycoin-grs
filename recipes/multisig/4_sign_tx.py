@@ -2,11 +2,11 @@
 
 import sys
 
-from pycoin.key.validate import is_wif_valid
-from pycoin.serialize import h2b
-from pycoin.tx.pay_to import build_p2sh_lookup
-from pycoin.tx.Tx import Tx
-from pycoin.tx.tx_utils import sign_tx
+from pycoin_grs.key.validate import is_wif_valid
+from pycoin_grs.serialize import h2b
+from pycoin_grs.tx.pay_to import build_p2sh_lookup
+from pycoin_grs.tx.Tx import Tx
+from pycoin_grs.tx.tx_utils import sign_tx
 
 
 def main():

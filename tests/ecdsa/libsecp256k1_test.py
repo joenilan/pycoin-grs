@@ -3,15 +3,15 @@ import unittest
 
 from ctypes import cdll, byref, c_int, c_uint, c_char_p, c_void_p, c_size_t, create_string_buffer
 
-from pycoin.ecdsa.secp256k1 import secp256k1_generator
-from pycoin.ecdsa.intstream import to_bytes, from_bytes
-from pycoin.ecdsa.native.secp256k1 import libsecp256k1, SECP256K1_EC_UNCOMPRESSED
-from pycoin.ecdsa.rfc6979 import deterministic_generate_k
-from pycoin.encoding import from_bytes_32, to_bytes_32
-from pycoin.intbytes import int2byte, byte2int
-from pycoin.serialize import b2h
+from pycoin_grs.ecdsa.secp256k1 import secp256k1_generator
+from pycoin_grs.ecdsa.intstream import to_bytes, from_bytes
+from pycoin_grs.ecdsa.native.secp256k1 import libsecp256k1, SECP256K1_EC_UNCOMPRESSED
+from pycoin_grs.ecdsa.rfc6979 import deterministic_generate_k
+from pycoin_grs.encoding import from_bytes_32, to_bytes_32
+from pycoin_grs.intbytes import int2byte, byte2int
+from pycoin_grs.serialize import b2h
 
-from pycoin.ecdsa.secp256k1 import Generator, _p, _a, _b, _Gx, _Gy, _r
+from pycoin_grs.ecdsa.secp256k1 import Generator, _p, _a, _b, _Gx, _Gy, _r
 
 legacy_secp256k1_group = Generator(_p, _a, _b, (_Gx, _Gy), _r)
 

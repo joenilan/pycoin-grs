@@ -1,3 +1,4 @@
+
 KU and TX
 =========
 
@@ -265,7 +266,7 @@ As a Dogecoin address:
 tx
 --
 
-The command-line utility ```tx``` will display transactions in human-readable form, fetch base transactions from pycoin's transaction cache or from web services (blockchain.info, blockcypher.com and chain.so are among those currently supported), merge transactions, add or delete inputs or outputs, and sign transactions.
+The command-line utility ```tx``` will display transactions in human-readable form, fetch base transactions from pycoin_grs's transaction cache or from web services (blockchain.info, blockcypher.com and chain.so are among those currently supported), merge transactions, add or delete inputs or outputs, and sign transactions.
 
 Some examples follow.
 
@@ -273,8 +274,8 @@ Some examples follow.
 View the famous "pizza" transaction [PIZZA]:
 
     $ tx 49d2adb6e476fa46d8357babf78b1b501fd39e177ac7833124b3f67b17c40c2a
-    warning: consider setting environment variable PYCOIN_CACHE_DIR=~/.pycoin_cache to cache transactions fetched via web services
-    warning: no service providers found for get_tx; consider setting environment variable PYCOIN_BTC_PROVIDERS
+    warning: consider setting environment variable PYCOIN_GRS_CACHE_DIR=~/.pycoin_grs_cache to cache transactions fetched via web services
+    warning: no service providers found for get_tx; consider setting environment variable PYCOIN_GRS_BTC_PROVIDERS
     usage: tx [-h] [-t TRANSACTION_VERSION] [-l LOCK_TIME] [-n NETWORK] [-a]
               [-i address] [-f path-to-private-keys] [-g GPG_ARGUMENT]
               [--remove-tx-in tx_in_index_to_delete]
@@ -285,9 +286,9 @@ View the famous "pizza" transaction [PIZZA]:
 
 Oops! We don't have web services set up. Let's do that now:
 
-    $ PYCOIN_CACHE_DIR=~/.pycoin_cache
-    $ PYCOIN_BTC_PROVIDERS="block.io blockchain.info blockexplorer.com"
-    $ export PYCOIN_CACHE_DIR PYCOIN_BTC_PROVIDERS
+    $ PYCOIN_GRS_CACHE_DIR=~/.pycoin_grs_cache
+    $ PYCOIN_GRS_BTC_PROVIDERS="block.io blockchain.info blockexplorer.com"
+    $ export PYCOIN_GRS_CACHE_DIR PYCOIN_GRS_BTC_PROVIDERS
 
 It's not done automatically so a command-line tool won't leak potentially private information about what transactions you're interested in to a third-party website. If you don't care, you could put these lines into your `.profile`.
 
@@ -327,7 +328,7 @@ The final line appears because to validate the transactions' signatures, you tec
 
 We can see the transactions have been cached.
 
-    $ ls ~/.pycoin_cache/txs/
+    $ ls ~/.pycoin_grs_cache/txs/
     1e133f7de73ac7d074e2746a3d6717dfc99ecaa8e9f9fade2cb8b0b20a5e0441_tx.bin
     49d2adb6e476fa46d8357babf78b1b501fd39e177ac7833124b3f67b17c40c2a_tx.bin
 
@@ -488,7 +489,7 @@ Wow! It worked! (It wrote the output as hex because of the ".hex" suffix.)
 
 So why not just broadcast this transaction and collect our winnings? Well, the coins have already been spent. Oh well.
 
-Note that pycoin uses a deterministic algorithm to create the signatures, so if you try this at home, you will get the exact same transaction with the exact same 0995cf6f55e1cf22f7c31f5ad52d111e897b0b9b7e37a1bb755a470324b4a2c4 hash.
+Note that pycoin_grs uses a deterministic algorithm to create the signatures, so if you try this at home, you will get the exact same transaction with the exact same 0995cf6f55e1cf22f7c31f5ad52d111e897b0b9b7e37a1bb755a470324b4a2c4 hash.
 
 
 [PIZZA]: https://bitcointalk.org/index.php?topic=137.0

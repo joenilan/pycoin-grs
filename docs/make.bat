@@ -99,9 +99,9 @@ if "%1" == "qthelp" (
 	echo.
 	echo.Build finished; now you can run "qcollectiongenerator" with the ^
 .qhcp project file in %BUILDDIR%/qthelp, like this:
-	echo.^> qcollectiongenerator %BUILDDIR%\qthelp\pycoin.qhcp
+	echo.^> qcollectiongenerator %BUILDDIR%\qthelp\pycoin_grs.qhcp
 	echo.To view the help file:
-	echo.^> assistant -collectionFile %BUILDDIR%\qthelp\pycoin.ghc
+	echo.^> assistant -collectionFile %BUILDDIR%\qthelp\pycoin_grs.ghc
 	goto end
 )
 

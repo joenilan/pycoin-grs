@@ -9,11 +9,11 @@ try:
 except ImportError:
     from io import StringIO
 
-from pycoin.cmds import block, ku, msg, tx
+from pycoin_grs.cmds import block, ku, msg, tx
 
 
 DEFAULT_ENV = {
-    "PYCOIN_BTC_PROVIDERS": "blockchain.info blockexplorer.com",
+    "PYCOIN_GRS_BTC_PROVIDERS": "blockchain.info blockexplorer.com",
     "PATH": os.environ.get("PATH")
 }
 

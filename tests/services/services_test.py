@@ -2,13 +2,13 @@
 import threading
 import unittest
 
-from pycoin.serialize import h2b_rev
-from pycoin.services import providers
-from pycoin.services.blockchain_info import BlockchainInfoProvider
-from pycoin.services.blockcypher import BlockcypherProvider
-from pycoin.services.blockexplorer import BlockExplorerProvider
-from pycoin.services.chain_so import ChainSoProvider
-from pycoin.services.insight import InsightProvider
+from pycoin_grs.serialize import h2b_rev
+from pycoin_grs.services import providers
+from pycoin_grs.services.blockchain_info import BlockchainInfoProvider
+from pycoin_grs.services.blockcypher import BlockcypherProvider
+from pycoin_grs.services.blockexplorer import BlockExplorerProvider
+from pycoin_grs.services.chain_so import ChainSoProvider
+from pycoin_grs.services.insight import InsightProvider
 
 
 BLOCK_0_HASH = h2b_rev("000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f")

@@ -1,11 +1,11 @@
-Getting Started with pycoin
+Getting Started with pycoin_grs
 ===========================
 
 Installation
 ------------
-To install pycoin, run this command the terminal::
+To install pycoin_grs, run this command the terminal::
 
-    $ pip install pycoin
+    $ pip install pycoin_grs
 
 If you don't have `pip <https://pip.pypa.io>`_ installed, check out
 `<http://docs.python-guide.org/en/latest/starting/installation/>`_.
@@ -14,7 +14,7 @@ If you don't have `pip <https://pip.pypa.io>`_ installed, check out
 Sanity Check
 ------------
 
-To see if pycoin is correctly installed, try a command-line tool::
+To see if pycoin_grs is correctly installed, try a command-line tool::
 
     $ ku 1
 

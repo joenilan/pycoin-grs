@@ -4,7 +4,7 @@ Commands
 :mod:`block` Module
 ----------------------------------
 
-.. automodule:: pycoin.cmds.block
+.. automodule:: pycoin_grs.cmds.block
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ Commands
 :mod:`ku` Module
 ----------------------------------
 
-.. automodule:: pycoin.cmds.ku
+.. automodule:: pycoin_grs.cmds.ku
     :members:
     :undoc-members:
     :show-inheritance:
@@ -22,7 +22,7 @@ Commands
 :mod:`tx` Module
 ----------------------------------
 
-.. automodule:: pycoin.cmds.tx
+.. automodule:: pycoin_grs.cmds.tx
     :members:
     :undoc-members:
     :show-inheritance:

@@ -4,7 +4,7 @@ Convention
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.convention.__init__
+.. automodule:: pycoin_grs.convention.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -12,7 +12,7 @@ Convention
 :mod:`tx_fee` Module
 ----------------------------------
 
-.. automodule:: pycoin.convention.tx_fee
+.. automodule:: pycoin_grs.convention.tx_fee
     :members:
     :undoc-members:
     :show-inheritance:

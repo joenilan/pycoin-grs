@@ -4,7 +4,7 @@ tx
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.tx.__init__
+.. automodule:: pycoin_grs.tx.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ tx
 :mod:`exceptions` Module
 ----------------------------------
 
-.. automodule:: pycoin.tx.exceptions
+.. automodule:: pycoin_grs.tx.exceptions
     :members:
     :undoc-members:
     :show-inheritance:
@@ -22,7 +22,7 @@ tx
 :mod:`Spendable` Module
 ----------------------------------
 
-.. automodule:: pycoin.tx.Spendable
+.. automodule:: pycoin_grs.tx.Spendable
     :members:
     :undoc-members:
     :show-inheritance:
@@ -31,7 +31,7 @@ tx
 :mod:`tx_utils` Module
 ----------------------------------
 
-.. automodule:: pycoin.tx.tx_utils
+.. automodule:: pycoin_grs.tx.tx_utils
     :members:
     :undoc-members:
     :show-inheritance:
@@ -40,7 +40,7 @@ tx
 :mod:`Tx` Module
 ----------------------------------
 
-.. automodule:: pycoin.tx.Tx
+.. automodule:: pycoin_grs.tx.Tx
     :members:
     :undoc-members:
     :show-inheritance:
@@ -49,7 +49,7 @@ tx
 :mod:`TxIn` Module
 ----------------------------------
 
-.. automodule:: pycoin.tx.TxIn
+.. automodule:: pycoin_grs.tx.TxIn
     :members:
     :undoc-members:
     :show-inheritance:
@@ -58,7 +58,7 @@ tx
 :mod:`TxOut` Module
 ----------------------------------
 
-.. automodule:: pycoin.tx.TxOut
+.. automodule:: pycoin_grs.tx.TxOut
     :members:
     :undoc-members:
     :show-inheritance:
@@ -69,5 +69,5 @@ Subpackages
 
 .. toctree::
 
-    pycoin.tx.pay_to
-    pycoin.tx.script
+    pycoin_grs.tx.pay_to
+    pycoin_grs.tx.script

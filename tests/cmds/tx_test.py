@@ -2,10 +2,10 @@ import unittest
 import os
 import tempfile
 
-from pycoin.cmds import tx
-from pycoin.key import Key
-from pycoin.serialize import h2b
-from pycoin.tx.Tx import Tx
+from pycoin_grs.cmds import tx
+from pycoin_grs.key import Key
+from pycoin_grs.serialize import h2b
+from pycoin_grs.tx.Tx import Tx
 
 from .ToolTest import ToolTest
 
@@ -36,7 +36,7 @@ class TxTest(ToolTest):
             "ffffffff0704ffff001d0104ffffffff0100f2052a0100000043410496b538e853519c726a"
             "2c91e61ec11600ae1390813a627c66fb8be7947be63c52da7589379515d4e0a604f8141781"
             "e62294721166bf621e73a82cbf2342c858eeac00000000")
-        self.launch_tool("tx -C %s --db %s" % (tx.id(), tx.as_hex()), env=dict(PYCOIN_CACHE_DIR=the_dir))
+        self.launch_tool("tx -C %s --db %s" % (tx.id(), tx.as_hex()), env=dict(PYCOIN_GRS_CACHE_DIR=the_dir))
         self.assertTrue(os.path.exists(os.path.join(the_dir, "txs", "%s_tx.bin" % tx.id())))
 
     def test_pay_to_script_file(self):
@@ -66,7 +66,7 @@ class TxTest(ToolTest):
         wifs = ' '.join(Key(_).wif() for _ in (1, 2, 3))
         signed = tempfile.mktemp(suffix=".hex")
         self.launch_tool("tx -a -P %s --db %s %s %s -o %s" % (
-            p2sh_file.name, tx_source_hex, tx_to_sign, wifs, signed), env=dict(PYCOIN_CACHE_DIR=the_dir))
+            p2sh_file.name, tx_source_hex, tx_to_sign, wifs, signed), env=dict(PYCOIN_GRS_CACHE_DIR=the_dir))
         tx = Tx.from_hex(open(signed).read())
         self.assertEqual(tx.id(), "9d991ddccf77e33cb4584e4fc061a36da0da43589232b2e78a1aa0748ac3254b")
 

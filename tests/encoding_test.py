@@ -1,8 +1,8 @@
 import unittest
 
-from pycoin import encoding
-from pycoin.intbytes import iterbytes
-from pycoin.serialize import h2b
+from pycoin_grs import encoding
+from pycoin_grs.intbytes import iterbytes
+from pycoin_grs.serialize import h2b
 
 
 class EncodingTestCase(unittest.TestCase):

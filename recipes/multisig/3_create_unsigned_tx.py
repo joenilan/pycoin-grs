@@ -9,11 +9,11 @@
 
 import sys
 
-from pycoin.key.key_from_text import key_from_text
+from pycoin_grs.key.key_from_text import key_from_text
 
-from pycoin.tx.Tx import Tx
-from pycoin.tx.tx_utils import create_tx
-from pycoin.key.validate import is_address_valid
+from pycoin_grs.tx.Tx import Tx
+from pycoin_grs.tx.tx_utils import create_tx
+from pycoin_grs.key.validate import is_address_valid
 
 
 def main():

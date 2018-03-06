@@ -1,7 +1,15 @@
+
+
+
+
+
+
+
+
 BIP32 Wallets
 -------------
 
-The pycoin library implements a deterministic wallet that will securely generate Bitcoin addresses compliant with
+The pycoin_grs library implements a deterministic wallet that will securely generate Bitcoin addresses compliant with
 [BIP0032].
 
 This includes creating and parsing standard wallet keys.

@@ -1,7 +1,7 @@
 import unittest
 
-from pycoin.key import Key
-from pycoin.key.electrum import ElectrumWallet
+from pycoin_grs.key import Key
+from pycoin_grs.key.electrum import ElectrumWallet
 
 MPK = 1
 

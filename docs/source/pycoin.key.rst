@@ -4,7 +4,7 @@ Key
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.key.__init__
+.. automodule:: pycoin_grs.key.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ Key
 :mod:`bip32` Module
 ----------------------------------
 
-.. automodule:: pycoin.key.bip32
+.. automodule:: pycoin_grs.key.bip32
     :members:
     :undoc-members:
     :show-inheritance:
@@ -22,7 +22,7 @@ Key
 :mod:`BIP32Node` Module
 ----------------------------------
 
-.. automodule:: pycoin.key.BIP32Node
+.. automodule:: pycoin_grs.key.BIP32Node
     :members:
     :undoc-members:
     :show-inheritance:
@@ -31,7 +31,7 @@ Key
 :mod:`electrum` Module
 ----------------------------------
 
-.. automodule:: pycoin.key.electrum
+.. automodule:: pycoin_grs.key.electrum
     :members:
     :undoc-members:
     :show-inheritance:
@@ -40,7 +40,7 @@ Key
 :mod:`key_from_text` Module
 ----------------------------------
 
-.. automodule:: pycoin.key.key_from_text
+.. automodule:: pycoin_grs.key.key_from_text
     :members:
     :undoc-members:
     :show-inheritance:
@@ -49,7 +49,7 @@ Key
 :mod:`Key` Module
 ----------------------------------
 
-.. automodule:: pycoin.key.Key
+.. automodule:: pycoin_grs.key.Key
     :members:
     :undoc-members:
     :show-inheritance:
@@ -58,7 +58,7 @@ Key
 :mod:`validate` Module
 ----------------------------------
 
-.. automodule:: pycoin.key.validate
+.. automodule:: pycoin_grs.key.validate
     :members:
     :undoc-members:
     :show-inheritance:

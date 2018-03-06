@@ -4,7 +4,7 @@ ECDSA
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.ecdsa.__init__
+.. automodule:: pycoin_grs.ecdsa.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ ECDSA
 :mod:`ecdsa` Module
 ----------------------------------
 
-.. automodule:: pycoin.ecdsa.ecdsa
+.. automodule:: pycoin_grs.ecdsa.ecdsa
     :members:
     :undoc-members:
     :show-inheritance:
@@ -22,7 +22,7 @@ ECDSA
 :mod:`ellipticcurve` Module
 ----------------------------------
 
-.. automodule:: pycoin.ecdsa.ellipticcurve
+.. automodule:: pycoin_grs.ecdsa.ellipticcurve
     :members:
     :undoc-members:
     :show-inheritance:
@@ -31,7 +31,7 @@ ECDSA
 :mod:`numbertheory` Module
 ----------------------------------
 
-.. automodule:: pycoin.ecdsa.numbertheory
+.. automodule:: pycoin_grs.ecdsa.numbertheory
     :members:
     :undoc-members:
     :show-inheritance:
@@ -40,7 +40,7 @@ ECDSA
 :mod:`secp256k1` Module
 ----------------------------------
 
-.. automodule:: pycoin.ecdsa.secp256k1
+.. automodule:: pycoin_grs.ecdsa.secp256k1
     :members:
     :undoc-members:
     :show-inheritance:
@@ -49,7 +49,7 @@ ECDSA
 :mod:`native.bignum` Module
 ----------------------------------
 
-.. automodule:: pycoin.ecdsa.native.bignum
+.. automodule:: pycoin_grs.ecdsa.native.bignum
     :members:
     :undoc-members:
     :show-inheritance:
@@ -58,7 +58,7 @@ ECDSA
 :mod:`native.library` Module
 ----------------------------------
 
-.. automodule:: pycoin.ecdsa.native.library
+.. automodule:: pycoin_grs.ecdsa.native.library
     :members:
     :undoc-members:
     :show-inheritance:

@@ -4,7 +4,7 @@ Services
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.__init__
+.. automodule:: pycoin_grs.services.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ Services
 :mod:`agent` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.agent
+.. automodule:: pycoin_grs.services.agent
     :members:
     :undoc-members:
     :show-inheritance:
@@ -22,7 +22,7 @@ Services
 :mod:`bitcoind` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.bitcoind
+.. automodule:: pycoin_grs.services.bitcoind
     :members:
     :undoc-members:
     :show-inheritance:
@@ -31,7 +31,7 @@ Services
 :mod:`blockchain_info` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.blockchain_info
+.. automodule:: pycoin_grs.services.blockchain_info
     :members:
     :undoc-members:
     :show-inheritance:
@@ -40,7 +40,7 @@ Services
 :mod:`blockcypher` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.blockcypher
+.. automodule:: pycoin_grs.services.blockcypher
     :members:
     :undoc-members:
     :show-inheritance:
@@ -49,7 +49,7 @@ Services
 :mod:`chain_so` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.chain_so
+.. automodule:: pycoin_grs.services.chain_so
     :members:
     :undoc-members:
     :show-inheritance:
@@ -58,7 +58,7 @@ Services
 :mod:`env` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.env
+.. automodule:: pycoin_grs.services.env
     :members:
     :undoc-members:
     :show-inheritance:
@@ -68,7 +68,7 @@ Services
 :mod:`insight` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.insight
+.. automodule:: pycoin_grs.services.insight
     :members:
     :undoc-members:
     :show-inheritance:
@@ -77,7 +77,7 @@ Services
 :mod:`providers` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.providers
+.. automodule:: pycoin_grs.services.providers
     :members:
     :undoc-members:
     :show-inheritance:
@@ -86,7 +86,7 @@ Services
 :mod:`tx_db` Module
 ----------------------------------
 
-.. automodule:: pycoin.services.tx_db
+.. automodule:: pycoin_grs.services.tx_db
     :members:
     :undoc-members:
     :show-inheritance:

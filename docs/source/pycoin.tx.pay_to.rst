@@ -4,7 +4,7 @@ Pay To
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.tx.pay_to.__init__
+.. automodule:: pycoin_grs.tx.pay_to.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ Pay To
 :mod:`ScriptMultisig` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptMultisig
+.. automodule:: pycoin_grs.tx.pay_to.ScriptMultisig
     :members:
     :undoc-members:
     :show-inheritance:
@@ -23,7 +23,7 @@ Pay To
 :mod:`ScriptNulldata` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptNulldata
+.. automodule:: pycoin_grs.tx.pay_to.ScriptNulldata
     :members:
     :undoc-members:
     :show-inheritance:
@@ -33,7 +33,7 @@ Pay To
 :mod:`ScriptPayToAddress` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptPayToAddress
+.. automodule:: pycoin_grs.tx.pay_to.ScriptPayToAddress
     :members:
     :undoc-members:
     :show-inheritance:
@@ -43,7 +43,7 @@ Pay To
 :mod:`ScriptPayToAddressWit` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptPayToAddressWit
+.. automodule:: pycoin_grs.tx.pay_to.ScriptPayToAddressWit
     :members:
     :undoc-members:
     :show-inheritance:
@@ -53,7 +53,7 @@ Pay To
 :mod:`ScriptPayToPublicKey` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptPayToPublicKey
+.. automodule:: pycoin_grs.tx.pay_to.ScriptPayToPublicKey
     :members:
     :undoc-members:
     :show-inheritance:
@@ -62,7 +62,7 @@ Pay To
 :mod:`ScriptPayToScript` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptPayToScript
+.. automodule:: pycoin_grs.tx.pay_to.ScriptPayToScript
     :members:
     :undoc-members:
     :show-inheritance:
@@ -71,7 +71,7 @@ Pay To
 :mod:`ScriptPayToScriptWit` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptPayToScriptWit
+.. automodule:: pycoin_grs.tx.pay_to.ScriptPayToScriptWit
     :members:
     :undoc-members:
     :show-inheritance:
@@ -80,7 +80,7 @@ Pay To
 :mod:`ScriptType` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptType
+.. automodule:: pycoin_grs.tx.pay_to.ScriptType
     :members:
     :undoc-members:
     :show-inheritance:
@@ -89,7 +89,7 @@ Pay To
 :mod:`ScriptUnknown` Module
 --------------------------------------------------
 
-.. automodule:: pycoin.tx.pay_to.ScriptUnknown
+.. automodule:: pycoin_grs.tx.pay_to.ScriptUnknown
     :members:
     :undoc-members:
     :show-inheritance:

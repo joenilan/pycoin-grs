@@ -1,12 +1,12 @@
-pycoin -- Python Cryptocoin Utilities
+pycoin_grs -- Python Cryptocoin Utilities
 =====================================
 
 This is an implementation of a bunch of utility routines that may be useful when dealing with bitcoin and some
 alt-coins. It has been tested with Python 2.7, 3.3, 3.4 and 3.5.
 
-See also [pycoinnet](http://github.com/richardkiss/pycoinnet/) for a library that speaks the bitcoin protocol.
+See also [pycoin_grsnet](http://github.com/richardkiss/pycoin_grsnet/) for a library that speaks the bitcoin protocol.
 
-Documentation at [readthedocs](http://pycoin.readthedocs.io/en/latest/)
+Documentation at [readthedocs](http://pycoin_grs.readthedocs.io/en/latest/)
 
 
 High Level
@@ -15,7 +15,7 @@ High Level
 Keys & BIP32
 ------------
 
-The class pycoin.key.Key contains a convenience Key class that will parse the base58 representation of a BIP 32
+The class pycoin_grs.key.Key contains a convenience Key class that will parse the base58 representation of a BIP 32
 wallet [BIP0032] or a WIF or a bitcoin (or altcoin) address, and convert downwards.
 
 WARNING: be extremely careful giving out public wallet keys. If someone has access to a private wallet key P, of
@@ -24,7 +24,7 @@ where P is a subkey of K, you can actually work your way up the tree to determin
 to the public wallet key K (unless private derivation was used at some point between the two keys)! Be sure you
 understand this warning before giving out public wallet keys!
 
-`pycoin.key.Key`
+`pycoin_grs.key.Key`
 ---------------
 
 ```
@@ -46,7 +46,7 @@ Or
 `Key.from_sec(sec)` creates a Key from the SEC bytestream encoding of a public pair.
 
 
-pycoin.key.BIP32Node (formerly pycoin.wallet.Wallet) provides a BIP32 hierarchical wallet.
+pycoin_grs.key.BIP32Node (formerly pycoin_grs.wallet.Wallet) provides a BIP32 hierarchical wallet.
 
 Much of this API is exposed in the `ku` command-line utility. See also [COMMAND-LINE-TOOLS.md](./COMMAND-LINE-TOOLS.md).
 
@@ -56,10 +56,10 @@ See [BIP32.txt](./BIP32.txt) for more information.
 Transactions
 ------------
 
-pycoin.tx.Tx is a class that wraps a bitcoin transaction. You can create, edit, sign, or validate a transaction using
+pycoin_grs.tx.Tx is a class that wraps a bitcoin transaction. You can create, edit, sign, or validate a transaction using
 methods in this class.
 
-You can also use `pycoin.tx.tx_utils` which has `create_tx` and `create_signed_tx`, which gives you a
+You can also use `pycoin_grs.tx.tx_utils` which has `create_tx` and `create_signed_tx`, which gives you a
 very easy way to create signed transactions.
 
 The command-line utility `tx` is a Swiss Army knife of transaction utilities. See also [COMMAND-LINE-TOOLS.md](./COMMAND-LINE-TOOLS.md).
@@ -71,16 +71,16 @@ Services
 When signing or verifying signatures on a transaction, the source transactions are generally needed. If you set two
 environment variables in your `.profile` like this:
 
-    PYCOIN_CACHE_DIR=~/.pycoin_cache
-    PYCOIN_BTC_PROVIDERS="blockchain.info blockexplorer.com chain.so"
-    export PYCOIN_CACHE_DIR PYCOIN_BTC_PROVIDERS
+    PYCOIN_GRS_CACHE_DIR=~/.pycoin_grs_cache
+    PYCOIN_GRS_BTC_PROVIDERS="blockchain.info blockexplorer.com chain.so"
+    export PYCOIN_GRS_CACHE_DIR PYCOIN_GRS_BTC_PROVIDERS
 
 and then `tx` will automatically fetch transactions from the web sites listed and cache the results in
-`PYCOIN_CACHE_DIR` when they are needed.
+`PYCOIN_GRS_CACHE_DIR` when they are needed.
 
-(The old syntax with `PYCOIN_SERVICE_PROVIDERS` is deprecated.)
+(The old syntax with `PYCOIN_GRS_SERVICE_PROVIDERS` is deprecated.)
 
-The module pycoin.services includes two functions `spendables_for_address`, `get_tx_db` that look at the
+The module pycoin_grs.services includes two functions `spendables_for_address`, `get_tx_db` that look at the
 environment variables set to determine which web sites to use to fetch the underlying information. The sites are
 polled in the order they are listed in the environment variable.
 
@@ -89,7 +89,7 @@ Blocks
 ------
 
 The command-line utility `block` will dump a block in a human-readable format. For further information, look at
-`pycoin.block`, which includes the object `Block` which will parse and stream the binary format of a block.
+`pycoin_grs.block`, which includes the object `Block` which will parse and stream the binary format of a block.
 
 
 Low Level
@@ -98,7 +98,7 @@ Low Level
 ECDSA Signing and Verification
 ------------------------------
 
-The module `pycoin.ecdsa` deals with ECDSA keys directly. Important structures include:
+The module `pycoin_grs.ecdsa` deals with ECDSA keys directly. Important structures include:
 
 - the `secret_exponent` (a large integer that represents a private key)
 - the `public_pair` (a pair of large integers x and y that represent a public key)
@@ -111,7 +111,7 @@ for y of opposite even/odd parity, so you include a flag indicating which value 
 Encoding
 --------
 
-The `pycoin.encoding` module declares some conversion utilities useful when dealing with Bitcoin. Important
+The `pycoin_grs.encoding` module declares some conversion utilities useful when dealing with Bitcoin. Important
 structures include:
 
 * base58 (the encoding used for Bitcoin addresses)
@@ -125,7 +125,7 @@ structures include:
 Users
 -----
 
-Here's a partial list of users of pycoin:
+Here's a partial list of users of pycoin_grs:
 
  * [GreenAddress](https://greenaddress.it/)
  * [Coinkite](https://coinkite.com/)
@@ -138,11 +138,11 @@ Email me at him@richardkiss.com to be added to this list.
 Too Slow?
 ---------
 As of v0.60, there is experimental code that will call into OpenSSL for two slow functions.
-To enable this, set (and export) environment variable PYCOIN_NATIVE=openssl. Example:
+To enable this, set (and export) environment variable PYCOIN_GRS_NATIVE=openssl. Example:
 
 ```
-$ PYCOIN_NATIVE=openssl
-$ export PYCOIN_NATIVE
+$ PYCOIN_GRS_NATIVE=openssl
+$ export PYCOIN_GRS_NATIVE
 ```
 
 

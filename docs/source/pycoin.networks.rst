@@ -4,7 +4,7 @@ Networks
 :mod:`__init__` Module
 ----------------------------------
 
-.. automodule:: pycoin.networks.__init__
+.. automodule:: pycoin_grs.networks.__init__
     :members:
     :undoc-members:
     :show-inheritance:
@@ -13,7 +13,7 @@ Networks
 :mod:`all` Module
 ----------------------------------
 
-.. automodule:: pycoin.networks.all
+.. automodule:: pycoin_grs.networks.all
     :members:
     :undoc-members:
     :show-inheritance:
@@ -22,7 +22,7 @@ Networks
 :mod:`default` Module
 ----------------------------------
 
-.. automodule:: pycoin.networks.default
+.. automodule:: pycoin_grs.networks.default
     :members:
     :undoc-members:
     :show-inheritance:
@@ -31,7 +31,7 @@ Networks
 :mod:`legacy_networks` Module
 ----------------------------------
 
-.. automodule:: pycoin.networks.legacy_networks
+.. automodule:: pycoin_grs.networks.legacy_networks
     :members:
     :undoc-members:
     :show-inheritance:
@@ -40,7 +40,7 @@ Networks
 :mod:`network` Module
 ----------------------------------
 
-.. automodule:: pycoin.networks.network
+.. automodule:: pycoin_grs.networks.network
     :members:
     :undoc-members:
     :show-inheritance:
@@ -49,7 +49,7 @@ Networks
 :mod:`registry` Module
 ----------------------------------
 
-.. automodule:: pycoin.networks.registry
+.. automodule:: pycoin_grs.networks.registry
     :members:
     :undoc-members:
     :show-inheritance:

@@ -1,8 +1,8 @@
 import binascii
 import unittest
 
-from pycoin.serialize import b2h, h2b_rev
-from pycoin.tx.Tx import Tx
+from pycoin_grs.serialize import b2h, h2b_rev
+from pycoin_grs.tx.Tx import Tx
 
 TX_E1A18B843FC420734DEEB68FF6DF041A2585E1A0D7DBF3B82AAB98291A6D9952_HEX = (
     "0100000001a8f57056b016d7d243fc0fc2a73f9146e7e4c7766ec6033b5ac4cb89c64e"
@@ -45,8 +45,8 @@ class TxTest(unittest.TestCase):
 
     def test_issue_39(self):
         """
-        See https://github.com/richardkiss/pycoin/issues/39 and
-        https://github.com/richardkiss/pycoin/pull/40
+        See https://github.com/richardkiss/pycoin_grs/issues/39 and
+        https://github.com/richardkiss/pycoin_grs/pull/40
 
         There was a problem validating the following transactions:
 

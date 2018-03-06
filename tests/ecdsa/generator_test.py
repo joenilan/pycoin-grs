@@ -1,9 +1,9 @@
 import hashlib
 import unittest
 
-from pycoin.ecdsa.Point import Point
-from pycoin.ecdsa.Generator import Generator
-from pycoin.ecdsa.Curve import Curve
+from pycoin_grs.ecdsa.Point import Point
+from pycoin_grs.ecdsa.Generator import Generator
+from pycoin_grs.ecdsa.Curve import Curve
 
 
 class GeneratorTestCase(unittest.TestCase):

@@ -1,13 +1,13 @@
 import unittest
-from pycoin.contrib import who_signed
-from pycoin.key import Key
-from pycoin.tx import tx_utils
-from pycoin.tx.Tx import Tx, SIGHASH_ALL
-from pycoin.tx.TxIn import TxIn
-from pycoin.tx.TxOut import TxOut
-from pycoin.tx.pay_to import ScriptMultisig
-from pycoin.tx.pay_to import build_hash160_lookup, build_p2sh_lookup
-from pycoin.ui import address_for_pay_to_script, standard_tx_out_script
+from pycoin_grs.contrib import who_signed
+from pycoin_grs.key import Key
+from pycoin_grs.tx import tx_utils
+from pycoin_grs.tx.Tx import Tx, SIGHASH_ALL
+from pycoin_grs.tx.TxIn import TxIn
+from pycoin_grs.tx.TxOut import TxOut
+from pycoin_grs.tx.pay_to import ScriptMultisig
+from pycoin_grs.tx.pay_to import build_hash160_lookup, build_p2sh_lookup
+from pycoin_grs.ui import address_for_pay_to_script, standard_tx_out_script
 
 
 class WhoSignedTest(unittest.TestCase):

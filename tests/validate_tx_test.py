@@ -2,10 +2,10 @@ import binascii
 import io
 import unittest
 
-from pycoin.block import Block
-from pycoin.serialize import h2b
-from pycoin.tx.script import tools
-from pycoin.tx.Tx import Tx
+from pycoin_grs.block import Block
+from pycoin_grs.serialize import h2b
+from pycoin_grs.tx.script import tools
+from pycoin_grs.tx.Tx import Tx
 
 
 class ValidatingTest(unittest.TestCase):

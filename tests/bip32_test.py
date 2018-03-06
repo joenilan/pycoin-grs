@@ -1,6 +1,6 @@
 import unittest
-from pycoin.key.BIP32Node import BIP32Node
-from pycoin.serialize import h2b
+from pycoin_grs.key.BIP32Node import BIP32Node
+from pycoin_grs.serialize import h2b
 
 
 class Bip0032TestCase(unittest.TestCase):
@@ -238,7 +238,7 @@ class Bip0032TestCase(unittest.TestCase):
         self.assertRaises(ValueError, list, my_prv.subkeys('-1-0'))
 
     def test_repr(self):
-        from pycoin.key import Key
+        from pycoin_grs.key import Key
         netcode = 'XTN'
         key = Key(secret_exponent=273, netcode=netcode)
         wallet = BIP32Node.from_master_secret(bytes(key.wif().encode('ascii')), netcode)

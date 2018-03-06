@@ -1,10 +1,10 @@
 import itertools
 import unittest
-from pycoin.key import Key
-from pycoin.tx.Tx import Tx, TxIn, TxOut
-from pycoin.tx.tx_utils import create_tx
-from pycoin.tx.pay_to import ScriptMultisig
-from pycoin.tx.pay_to import build_hash160_lookup
+from pycoin_grs.key import Key
+from pycoin_grs.tx.Tx import Tx, TxIn, TxOut
+from pycoin_grs.tx.tx_utils import create_tx
+from pycoin_grs.tx.pay_to import ScriptMultisig
+from pycoin_grs.tx.pay_to import build_hash160_lookup
 
 
 class MultisigIndividualTest(unittest.TestCase):

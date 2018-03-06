@@ -1,16 +1,16 @@
 import unittest
-from pycoin.ecdsa.secp256k1 import secp256k1_generator
-from pycoin.encoding import (
+from pycoin_grs.ecdsa.secp256k1 import secp256k1_generator
+from pycoin_grs.encoding import (
     int2byte,
     to_bytes_32,
 )
-from pycoin.key import Key
-from pycoin.serialize import (
+from pycoin_grs.key import Key
+from pycoin_grs.serialize import (
     b2h,
     b2h_rev,
 )
-from pycoin.ui import standard_tx_out_script
-from pycoin.tx.Tx import (
+from pycoin_grs.ui import standard_tx_out_script
+from pycoin_grs.tx.Tx import (
     Tx,
     TxIn,
     TxOut,
@@ -18,11 +18,11 @@ from pycoin.tx.Tx import (
     SIGHASH_ANYONECANPAY,
     SIGHASH_SINGLE,
 )
-from pycoin.tx.script.der import (
+from pycoin_grs.tx.script.der import (
     sigdecode_der,
     sigencode_der,
 )
-from pycoin.tx.script.tools import compile as pycoin_compile
+from pycoin_grs.tx.script.tools import compile as pycoin_grs_compile
 
 PRIV_KEYS = (
     2330949616242593315303241053456316633827293588958882755297900732239663851861,
@@ -75,8 +75,8 @@ class SighashSingleTest(unittest.TestCase):
 
         # Fake a coinbase transaction
         coinbase_tx = Tx.coinbase_tx(k0.sec(), 500000000)
-        coinbase_tx.txs_out.append(TxOut(1000000000, pycoin_compile('%s OP_CHECKSIG' % b2h(k1.sec()))))
-        coinbase_tx.txs_out.append(TxOut(1000000000, pycoin_compile('%s OP_CHECKSIG' % b2h(k2.sec()))))
+        coinbase_tx.txs_out.append(TxOut(1000000000, pycoin_grs_compile('%s OP_CHECKSIG' % b2h(k1.sec()))))
+        coinbase_tx.txs_out.append(TxOut(1000000000, pycoin_grs_compile('%s OP_CHECKSIG' % b2h(k2.sec()))))
 
         self.assertEqual('2acbe1006f7168bad538b477f7844e53de3a31ffddfcfc4c6625276dd714155a',
                          b2h_rev(coinbase_tx.hash()))
@@ -105,7 +105,7 @@ class SighashSingleTest(unittest.TestCase):
         sig = sigmake(k0, sig_hash, sig_type)
         self.assertTrue(sigcheck(k0, sig_hash, sig[:-1]))
 
-        tx.txs_in[0].script = pycoin_compile(b2h(sig))
+        tx.txs_in[0].script = pycoin_grs_compile(b2h(sig))
         self.assertTrue(tx.is_signature_ok(0))
 
         sig_hash = tx.signature_hash(coinbase_tx.txs_out[1].script, 1, sig_type)
@@ -114,7 +114,7 @@ class SighashSingleTest(unittest.TestCase):
         sig = sigmake(k1, sig_hash, sig_type)
         self.assertTrue(sigcheck(k1, sig_hash, sig[:-1]))
 
-        tx.txs_in[1].script = pycoin_compile(b2h(sig))
+        tx.txs_in[1].script = pycoin_grs_compile(b2h(sig))
         self.assertTrue(tx.is_signature_ok(1))
 
         sig_hash = tx.signature_hash(coinbase_tx.txs_out[2].script, 2, sig_type)
@@ -123,7 +123,7 @@ class SighashSingleTest(unittest.TestCase):
         sig = sigmake(k2, sig_hash, sig_type)
         self.assertTrue(sigcheck(k2, sig_hash, sig[:-1]))
 
-        tx.txs_in[2].script = pycoin_compile(b2h(sig))
+        tx.txs_in[2].script = pycoin_grs_compile(b2h(sig))
         self.assertTrue(tx.is_signature_ok(2))
 
         sig_type = SIGHASH_SINGLE | SIGHASH_ANYONECANPAY
@@ -134,7 +134,7 @@ class SighashSingleTest(unittest.TestCase):
         sig = sigmake(k0, sig_hash, sig_type)
         self.assertTrue(sigcheck(k0, sig_hash, sig[:-1]))
 
-        tx.txs_in[0].script = pycoin_compile(b2h(sig))
+        tx.txs_in[0].script = pycoin_grs_compile(b2h(sig))
         self.assertTrue(tx.is_signature_ok(0))
 
         sig_hash = tx.signature_hash(coinbase_tx.txs_out[1].script, 1, sig_type)
@@ -143,7 +143,7 @@ class SighashSingleTest(unittest.TestCase):
         sig = sigmake(k1, sig_hash, sig_type)
         self.assertTrue(sigcheck(k1, sig_hash, sig[:-1]))
 
-        tx.txs_in[1].script = pycoin_compile(b2h(sig))
+        tx.txs_in[1].script = pycoin_grs_compile(b2h(sig))
         self.assertTrue(tx.is_signature_ok(1))
 
         sig_hash = tx.signature_hash(coinbase_tx.txs_out[2].script, 2, sig_type)
@@ -152,7 +152,7 @@ class SighashSingleTest(unittest.TestCase):
         sig = sigmake(k2, sig_hash, sig_type)
         self.assertTrue(sigcheck(k2, sig_hash, sig[:-1]))
 
-        tx.txs_in[2].script = pycoin_compile(b2h(sig))
+        tx.txs_in[2].script = pycoin_grs_compile(b2h(sig))
         self.assertTrue(tx.is_signature_ok(2))
 
 

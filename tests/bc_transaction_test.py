@@ -1,5 +1,5 @@
 """
-Test suite for pycoin library: check validity of txs in files
+Test suite for pycoin_grs library: check validity of txs in files
 tx_valid.json and tx_invalid.json. Adapted from Bitcoin Core
 transaction_tests.cpp test suite.
 
@@ -32,12 +32,12 @@ import unittest
 import json
 import os
 
-from pycoin.serialize import h2b_rev
-from pycoin.tx.Tx import Tx
-from pycoin.tx.exceptions import ValidationFailureError
-from pycoin.tx.Spendable import Spendable
-from pycoin.tx.script.tools import compile
-from pycoin.tx.script import flags
+from pycoin_grs.serialize import h2b_rev
+from pycoin_grs.tx.Tx import Tx
+from pycoin_grs.tx.exceptions import ValidationFailureError
+from pycoin_grs.tx.Spendable import Spendable
+from pycoin_grs.tx.script.tools import compile
+from pycoin_grs.tx.script import flags
 
 
 DEBUG_TX_ID_LIST = []
